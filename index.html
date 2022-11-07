@@ -3,15 +3,59 @@
 <head>
     <meta charset="utf-8" />
     <title>Голована сторінка</title>
+    <link href="css/site.css" rel="stylesheet" />
+    <link href="css/menu.css" rel="stylesheet" />
 </head>
+
 <body>
-    <h1>Привіт! Гарна сьогодні погода</h1>
-    <h2>Підзаголовок 2</h2>
-    <div style="background-color: #60ffff">
+    <div id="menu">
+        <ul>
+            <li><a class="active" href="/">Home</a></li>
+            <li><a href="/dog.html">Собаки</a></li>
+            <li><a href="/cat.html">Коти</a></li>
+            <li style="float:right"><a href="/mouse.html">Морські свинки</a></li>
+        </ul>
+    </div>
+    
+
+    <div class="mycontainer">
+        <h1>Готель для тварин.</h1>
+        <h2>Найкращі умови для ваших тварин</h2>
+
+        <div class="mycol">
+            <div class="box">
+                <a href="dog.html">
+                    <h3>Собаки</h3>
+                    <img src="images/dog.jpg" width="100%" />
+                </a>
+            </div>
+        </div>
+
+        <div class="mycol">
+            <div class="box">
+                <a href="cat.html">
+                    <h3>Коти</h3>
+                    <img src="images/cat.jpg" width="100%" />
+                </a>
+            </div>
+        </div>
+
+        <div class="mycol">
+            <div class="box">
+                <a href="mouse.html">
+                    <h3>Криса, Морська свинка та ін. тварі</h3>
+                    <img src="images/bik.jpg" width="100%" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div style="background-color: #60ffff; clear:both;">
         <span>Hello</span>
         <p style="background-color:#edb362; margin: 50px;">
-            Tincidunt integer eu augue augue nunc elit dolor, 
-            luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, 
+            Tincidunt integer eu augue augue nunc elit dolor,
+            luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit,
             vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
         </p>
         <p>
@@ -20,8 +64,8 @@
             B - Blue
         </p>
     </div>
-    <img src="images/1.jpg" width="400"/>
-    <img src="images/2.jpg" width="400"/>
-    <img src="images/3.jpg" width="400"/>
+    <img src="images/1.jpg" width="400" />
+    <img src="images/2.jpg" width="400" />
+    <img src="images/3.jpg" width="400" />
 </body>
 </html>

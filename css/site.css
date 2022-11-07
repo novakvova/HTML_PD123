@@ -1,0 +1,22 @@
+﻿.mycontainer {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mycol {
+    float: left;
+    width: 33.3%;
+}
+
+.box {
+    margin: 10px;
+}
+
+    .box a:link {
+        text-decoration: none;
+    }
+
+    .box a:hover {
+        color: #f21134
+    }
