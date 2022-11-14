@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Модальне вікно</title>
+    <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <script>
+        window.onload = function () {
+            setInterval(function () {
+                var dialog = document.getElementById("happy_dialog");
+                dialog.style.display = "block";
+            }, 5000);
+        }
+    </script>
+</head>
+<body>
+    <h1>Привіт! Гарна сьогодні погода.</h1>
+    <h2>Треба піти на турнік :)</h2>
+
+    <div class="dialog" id="happy_dialog">
+        <header>
+            <div class="title">
+                Вітаємо із Новим Роком!!!
+            </div>
+            <div class="my-close">
+                &times;
+            </div>
+        </header>
+        <main>
+            <h2>
+                <i class="fa fa-smile-o" aria-hidden="true"></i>
+                Хороший був рік! Головне не втрачати голову.
+            </h2>
+            <img src="https://vsim.ua/img/cache/news_new_m/news/0016/27/1526912-yak-vi-zustrinete-noviy-rik-opituvannya.jpeg?hash=2019-12-22-16-19-40"
+                 alt="Фото" />
+        </main>
+        <footer>
+            <hr />
+            <div class="buttons">
+                <a href="#" class="danger">Хочу</a>
+                <a href="#">Не хочу</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

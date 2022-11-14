@@ -9,6 +9,10 @@
         "js/bootstrap.bundle.min.js",
         "css/bootstrap.css"
       ]
+    },
+    {
+      "library": "font-awesome@4.7.0",
+      "destination": "lib/font-awesome/"
     }
   ]
 }
