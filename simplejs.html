@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Голована сторінка</title>
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+    <link href="css/menu.css" rel="stylesheet" />
+</head>
+
+<body>
+    <script src="js/menu.js"></script>
+
+    <div class="container">
+        <h1>Приклад використанна JavaScript</h1>
+
+        <div class="alert alert-primary" style="display: none;" id="divMyInfo">
+        </div>
+        <div class="mb-3">
+            <label for="txtLastName" class="form-label">Прізвище</label>
+            <input type="text" class="form-control"
+                   id="txtLastName">
+        </div>
+
+        <div class="mb-3">
+            <label for="txtName" class="form-label">Ім'я</label>
+            <input type="text" class="form-control"
+                   id="txtName">
+        </div>
+        <button id="mybtn">Нажми мене</button>
+    </div>
+
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        var mybtn = document.getElementById("mybtn");
+        const txtName = document.getElementById("txtName");
+        const txtLastName = document.getElementById("txtLastName");
+        
+
+        if (mybtn) {
+            //console.log("Наша конопка", mybtn);
+            mybtn.onclick = function () {
+                let name = txtName.value;
+                let lastName = txtLastName.value;
+                let isValid = true;
+                if (!name) {
+                    txtName.classList.add("is-invalid");
+                    //alert("Вкажіть Ім'я");
+                    isValid = false;
+                }
+                if (!lastName) {
+                    txtLastName.classList.add("is-invalid");
+                    //alert("Вкажіть Прізвище");
+                    isValid = false;
+                }
+                if (!isValid)
+                    return;
+
+
+                showData(`${name} ${lastName}`);
+                console.log(name);
+                //console.log("ми нажали кнопку");
+            }
+        }
+        function showData(data) {
+            txtName.classList.remove("is-invalid");
+            txtLastName.classList.remove("is-invalid");
+            txtName.classList.add("is-valid");
+            txtLastName.classList.add("is-valid");
+            const divMyInfo = document.getElementById("divMyInfo");
+            divMyInfo.style.display = "block";
+            divMyInfo.innerHTML = `<span>Раді вас вітати</span> <b>${data}</b>`;
+        }
+        
+    </script>
+
+</body>
+</html>
