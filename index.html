@@ -4,31 +4,20 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Голована сторінка</title>
-    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/site.css" rel="stylesheet" />
     <link href="css/menu.css" rel="stylesheet" />
 </head>
 
 <body>
     <script src="js/menu.js"></script>
-
-    <!--<div id="menu">
-        <ul>
-            <li><a class="active" href="/">Home</a></li>
-            <li><a href="/dog.html">Собаки</a></li>
-            <li><a href="/cat.html">Коти</a></li>
-            <li style="float:right"><a href="/mouse.html">Морські свинки</a></li>
-        </ul>
-    </div>-->
-
-
     <div class="container">
         <h1>Готель для тварин.</h1>
         <h2>Найкращі умови для ваших тварин</h2>
         <button class="btn btn-success"
                 data-bs-toggle="modal"
-                data-bs-target="#bootstrapModal">
-            Модальне вікно
+                data-bs-target="#registerModal">
+            Відкрити модалку
         </button>
 
 
@@ -90,7 +79,7 @@
         document.write(request.responseText);
     </script>
 
-    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <!--<script src="lib/bootstrap/js/bootstrap.min.js"></script>-->
 </body>
 </html>
