@@ -32,6 +32,7 @@
     </div>
 
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/axios/axios.min.js"></script>
 
     <script>
         var mybtn = document.getElementById("mybtn");
@@ -58,7 +59,13 @@
                 if (!isValid)
                     return;
 
-
+                axios.post("http://localhost:5059/api/users", {
+                    name: "Славік",
+                    description: "Хороший козак",
+                    image: "uuuuuuuuuuuuuuuu"
+                }).then(resp => {
+                    console.log("Server result", resp);
+                });
                 showData(`${name} ${lastName}`);
                 console.log(name);
                 //console.log("ми нажали кнопку");
